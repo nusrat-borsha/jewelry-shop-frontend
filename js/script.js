@@ -103,3 +103,29 @@ document.addEventListener('keydown', function (e) {
     closeModal();
   }
 }); 
+
+// //==========ITEM DESCRIPTION COLLAPSE=========
+// const itemSpec = document.querySelectorAll(".item-specs");
+// const btnCloseDescrip = document.querySelectorAll(".close-tab-btn");
+// const btnsOpenDescrip = document.querySelectorAll(".open-tab-btn");
+
+// const openDescrip = function () {
+//   for (i = 0; i < 2; i++) {
+//     itemSpec[i].classList.remove('hidden');
+//     btnsOpenDescrip[i].classList.add('hidden');
+//     btnCloseDescrip[i].classList.remove('hidden');
+//   }
+// };
+
+// const closeDescrip = function () {
+//     for (i = 0; i < 2; i++) {
+//   itemSpec[i].classList.add('hidden');
+//   btnsOpenDescrip[i].classList.remove('hidden');
+//   btnCloseDescrip[i].classList.add('hidden');
+//     }
+// };
+
+// for (i = 0; i < 2; i++) {
+// btnsOpenDescrip[i].addEventListener('click', openDescrip);
+// btnCloseDescrip[i].addEventListener('click', closeDescrip);
+//}

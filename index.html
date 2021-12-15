@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
         <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/media_queries.css"/>
         <link rel="icon" href="img/j1-logo.svg" type="image/icon type">
 
         <title>Zircon</title>
@@ -16,12 +17,11 @@
         <div class="animate-text-container">
             <div class="top-text">FREE SHIPPING OVER $200 48HR DELIVERY</div>
         </div>
-        <header>
+        <header class="header">
             <img class="logo" src="img/j-logo.svg"/>
             <nav class="main-nav">
                 <ul class="main-nav-list">
-                    <li><a class="show-modal" href="#">Log In</a></li>
-                    <li><a class="show-modal" href="#">Sign Up</a></li>
+                    <li><a class="nav-browse" href="#">Browse Products</a></li>
                     <li><a href="#"><img class="shop-icon" src="img/shop-bag-icon.svg"/></a></li>
                 </ul>
             </nav>
@@ -38,66 +38,7 @@
                     <h1 class="heading-primary">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFits</h1>
                     <a href="#" class="hero-btn">Shop Now</a>
                 </div>
-                     <!--signup modal-->
-                <div class="modal-container hidden">
-                    <div class="modal-flex">
-                        <div class="modal-flex-item">
-                           <img class="modal-img" src="img/modal-img-3.jpg">
-                        </div>
-                        <div class="modal-flex-item modal-form">
-                           <button class="close-modal">&times;</button>
-                           <h2 class="modal-heading">SIGN UP</h2>
-                           <form>
-                               <div class="form-input-items">
-                                   <label>NAME</label>
-                                   <input type="text" id="signup-name" placeholder="Enter Name">
-                               </div>
-
-                               <div class="form-input-items">
-                                <label>EMAIL ADDRESS</label>
-                                <input type="email" id="signup-email"name" placeholder="Enter email">
-                               </div>
-
-                               <div class="form-input-items">
-                                <label>PASSWORD</label>
-                                <input type="password" id="signup-password"name" placeholder="Enter password">
-                               </div>
-
-                               <div class="form-input-items">
-                                   <button class="signup-btn">SIGN UP</button>
-                               </div>
-                           </form>
-                        </div>
-                    </div>
-                </div>
-
-                     <!--login modal-->
-                     <div class="modal-container hidden">
-                        <div class="modal-flex">
-                            <div class="modal-flex-item">
-                               <img class="modal-img" src="img/modal-img-3.jpg">
-                            </div>
-                            <div class="modal-flex-item modal-form">
-                               <button class="close-modal">&times;</button>
-                               <h2 class="modal-heading">LOGIN</h2>
-                               <form>
-                                   <div class="form-input-items">
-                                    <label>EMAIL ADDRESS</label>
-                                    <input type="email" id="signup-email"name" placeholder="Enter email">
-                                   </div>
-    
-                                   <div class="form-input-items">
-                                    <label>PASSWORD</label>
-                                    <input type="password" id="signup-password"name" placeholder="Enter password">
-                                   </div>
-    
-                                   <div class="form-input-items">
-                                       <button class="signup-btn">LOGIN</button>
-                                   </div>
-                               </form>
-                            </div>
-                        </div>
-                    </div>
+               
             </div>
 
             </section>
@@ -207,7 +148,7 @@
             </div>
         </section>
 
-        <footer>
+        <footer class="footer">
             <div class="footer-grid">
                 <div>
                     <h3>PRODUCTS</h3>
@@ -248,7 +189,9 @@
                         <li>TIKTOK</li>
                     </ul>
                 </div>
-
+            </div>
+            <div class="footer-logo-container">
+                <img class="footer-logo" src="img/j-logo.svg"/>
             </div>
         </footer>
     </body>

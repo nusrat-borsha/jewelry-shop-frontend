@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
         <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/media_queries.css"/>
         <link rel="icon" href="img/j1-logo.svg" type="image/icon type">
 
         <title>Zircon</title>
@@ -13,13 +14,15 @@
         <script defer src="js/script.js"></script>
     </head>
     <body>
-        <header>
+        <div class="animate-text-container">
+            <div class="top-text">FREE SHIPPING OVER $200 48HR DELIVERY</div>
+        </div>
+        <header class="header">
             <img class="logo" src="img/j-logo.svg"/>
             <nav class="main-nav">
                 <ul class="main-nav-list">
-                    <li><a href="#">Log In</a></li>
-                    <li><a href="#">Sign Up</a></li>
-                    <li><a href="#">BAG ICON</a></li>
+                    <li><a class="nav-browse" href="#">Browse Products</a></li>
+                    <li><a href="#"><img class="shop-icon" src="img/shop-bag-icon.svg"/></a></li>
                 </ul>
             </nav>
         </header>
@@ -30,9 +33,9 @@
                     <img class="single-item-img" src="img/earrings/earring-1.jpg">
                 </div>
                 <div class="flex-item item-desc-grid">
-                    <h3 class="single-item-name">name</h3>
-                    <h3>price</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda earum necessitatibus possimus? Voluptas voluptates magni nam rem doloremque minima maxime placeat, ipsam quam cupiditate quasi similique quaerat consectetur cum explicabo dolore nihil ratione reiciendis facilis assumenda odit vitae! Cupiditate, debitis.</p>
+                    <h3 class="single-item-name">Kitrino earring</h3>
+                    <h3>$70.00</h3>
+                    <p>A beautiful earring made with gold and yellow stones</p>
                     <button class="add-cart-btn">Add to cart</button>
                 </div>
             </div>
@@ -48,15 +51,15 @@
                 <div class="item-specs hidden">
                     <div class="single-item-material">
                         <h3>MATERIAL</h3>
-                        <p>24K GOLD PLATED</p>
+                        <p>18K GOLD PLATED</p>
                      </div>
                      <div class="single-item-material">
                         <h3>Length</h3>
-                        <p>19 CM</p>
+                        <p>7 CM</p>
                      </div>
                     <div class="single-item-material">
                        <h3>MATERIAL </h3>
-                       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur tempora, blanditiis aut dolore amet modi sit corporis veniam placeat, excepturi sint, nemo et quo. Rerum sapiente placeat assumenda minima mollitia quibusdam saepe quo. Odit a accusamus sit! Quas, et fuga.</p>
+                       <p>At Zircon, we value the quality of our work as well as the uniqueness of designing and creating precious metals jewelry. Regulatory labels on Zircon jewelry serve as confirmation of quality. All gold jewelries in Zircon are made with 18k gold that contains 75% gold and 25% silver.</p>
                     </div>
                 </div>
             </div>
@@ -87,53 +90,51 @@
             <div>
                 <h3 class="more-items-heading">YOU MIGHT ALSO LIKE</h3>
             </div>
-            <div class="container grid grid--4--cols">
-            <!--Item 1-->
-            <div class="img-item">
-                <img src="img/earrings/earring-1.jpg" class="earring-img"/>
-            </div>
-            
-            <!--Item 2-->
-            <div class="img-item">
-                <img src="img/rings/ring-3.jpg" class="ring-img"/>
-            </div>
-            
-            <!--Item 3-->
-            <div class="img-item">
-                <img src="img/bracelets/bracelet-2.jpg" class="brace-img"/>
-            </div>
-            
-            <!--Item 4-->
-            <div class="img-item">
-                <img src="img/necklaces/necklace-3.jpg" class="necklace-img"/>
-            </div>
-            
+                <div class="container grid grid--4--cols">
                 <!--Item 1-->
-            <div class="text-item">
-                <h3>Earrings</h3>
-                <p>Description of item 1</p>
-            </div>
-            
+                <div class="img-item">
+                    <div class="category-item-container">
+                        <img src="img/earrings/earring-1.jpg" class="ring-img"/>
+                        <h3>Earrings</h3>
+                        <p>Description of item 1</p>
+                      </div>
+                </div>
+                
                 <!--Item 2-->
-            <div class="text-item">
-                <h3>Rings</h3>
-                <p>Description of item 2</p>
-            </div>
-            
+                <div class="img-item">
+                    <a href="#">
+                        <div class="category-item-container">
+                          <img src="img/rings/ring-4.jpg" class="ring-img"/>
+                          <h3>Rings</h3>
+                          <p>Description of item 1</p>
+                        </div>
+                    </a>
+                </div>
+                
                 <!--Item 3-->
-            <div class="text-item">
-            <h3>Bracelets</h3>
-            <p>Description of item 3</p>
-            </div>
-            
+                <div class="img-item">
+                    <a href="#">
+                        <div class="category-item-container">
+                          <img src="img/bracelets/bracelet-3.jpg" class="brace-img"/>
+                          <h3>Earrings</h3>
+                          <p>Description of item 1</p>
+                        </div>
+                    </a>
+                </div>
+                
                 <!--Item 4-->
-            <div class="text-item">
-                <h3>Necklace</h3>
-                <p>Description of item 4</p>
-            </div>
-         </div>
+                <div class="img-item">
+                    <a href="#">
+                        <div class="category-item-container">
+                          <img src="img/necklaces/necklace-1.jpg" class="necklace-img"/>
+                          <h3>Rings</h3>
+                          <p>Description of item 1</p>
+                        </div>
+                    </a>
+                </div>
+             </div>
         </section>
-        <footer>
+        <footer class="footer">
             <div class="footer-grid">
                 <div>
                     <h3>PRODUCTS</h3>
@@ -174,7 +175,9 @@
                         <li>TIKTOK</li>
                     </ul>
                 </div>
-
+            </div>
+            <div class="footer-logo-container">
+                <img class="footer-logo" src="img/j-logo.svg"/>
             </div>
         </footer>
     </body>

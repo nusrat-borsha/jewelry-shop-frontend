@@ -76,14 +76,121 @@
     margin-left: -140%
 }
 
+
+/*-----ALL ITEMS-----*/
+.all-items-frontpage{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  margin-bottom: 4rem;
+}
+
+.all-items-body{
+  background-color: #f7f1f1;
+}
+
+.all-items-img{
+  width: 40rem;
+  height:auto;
+  flex:2; 
+}
+
+.slide1 > img {
+  width: 70%;
+  height: 10rem;
+}
+
+.slide1{
+  margin-top: 3rem;
+}
+
+.all-items-container{
+  display: grid;
+  padding: 2rem;
+  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  height: auto;
+  grid-template-columns: repeat(4,1fr);
+  text-align: center;
+  background-image:linear-gradient(to bottom, #f9f9f9, #f3f3f3);
+}
+
+.all-items-heading{
+  flex: 1;
+  align-self: center;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+.all-items-heading h1{
+align-self: center;
+}
+
 }
 
 
 /**************************/
-/* BELOW 514px (Smaller desktops) */
+/*     BELOW 514px        */
 /**************************/
 
 @media (max-width: 35em){
+
+/*---TOP ANIMATION---*/
+
+.animate-text-container{
+  width:100%;
+  background-color: #000;
+  height: 2rem;
+}
+
+.top-text{
+  /* width:100%;*/
+   color: #fff;
+   text-align: right;
+   position: relative;
+   animation: moveText 20s linear infinite;
+   font-size: 1rem;
+   padding: 0.2rem;
+   word-spacing: 0.2rem;
+ }
+
+/*----HEADER----*/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6.6rem;
+    padding: 0 2rem;
+    background-color: #d19987;
+}
+.items-nav-color{
+  background-color: #f7f1f1;
+}
+
+.logo{
+    height: 3rem;
+}
+
+.shop-icon{
+    width:2rem;
+}
+
+
+/*---NAVIGATION----*/
+.main-nav-list{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+
+.nav-browse{
+  font-size: 1rem;
+  font-weight: bold;
+}
 
 /*----HERO SECTION----*/
 .heading-primary{
@@ -99,6 +206,7 @@
 
 .hero-btn:link, .hero-btn:visited{
     padding: 0.3rem;
+    font-size: 1rem;
 }
 
 /*----FOOTER----*/
@@ -242,112 +350,42 @@
 .summary-item-detail:last-child{
     padding-bottom: 1rem;
   }
-/* 
-.checkout-category li{
-  text-align:center;
-}
 
-.checkout-item-img{
-  width:50%;
-  height: 20rem;
-}
-
-.continue-shop{
-    margin-left: -150%;
-}
-
-.items-in-cart{
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  border-bottom: 1px solid #d4caca;
-}
-
-.checkout-item-spec{
-  list-style: none;
-  margin: 8rem 5rem 3rem 2rem;
-  text-align: left;
-}
-
-.checkout-item-spec li{
-  padding: 1rem;
+/*-----ALL ITEMS---*/
+.all-items-heading{
+  flex: 1;
+  align-self: center;
   font-size: 1.5rem;
+  padding-left: 1rem;
 }
 
-.summary-item-detail{
-  display: flex;
-  justify-content: space-between; 
-}
-
-.summary-item-detail:last-child{
-  padding-bottom: 1rem;
-}
-
-.checkout-border-bottom{
-  border-bottom: 1px solid #534f4f;
-  padding-bottom: 1.5rem;
-}
-
-.checkout-shipping{
-  border: 1px solid #d8d7d7;
-}
-
-.checkout-shipping h3, span{
-  text-align: left;
-  margin: 1rem;
-  padding: 1rem;
-}
-
-.checkout-shipping h3{
-  border-bottom: 1px solid #d8d7d7;
-}
-
-.home-delivery-border{
-  border-bottom: 1px solid #bdbbbb;
-}
-
-.checkout-shipping-heading{
-  margin: 3rem 2rem 2rem 2rem;
-}
-
-.shipping-border-bottom{
-  border-bottom: 1px solid #534f4f;
-  margin-bottom: 4rem;
-  margin-top: 4rem;
-  width: 100%;
+.all-items-img{
+  width: 20rem;
+  height:auto;
+  flex:2; 
 }
 
 
-.checkout-payment{
-  border-bottom: 1px solid #bdbbbb;
+.all-items-heading h1{
+align-self: center;
+font-size: 1.5rem;
 }
 
-.checkout-address-input{
-  width: 70%;
-  margin-left: 10%;
-  margin-right: auto;
-  border: 1px solid #bdbbbb;
-  background: none;
-  border-radius:2%;
-  height: 8rem;
-  text-indent: 1rem;
-}
-
-.checkout-btn{
-  width: 50%;
-  margin-left: 25%;
-  margin-right: auto;
-  background: none;
-  border: none;
-  background-color: #000;
-  color: #fff;
-  height: 40px;
-  margin-bottom: 8rem;
+.all-items-container{
+  display: grid;
+  padding: 2rem;
+  margin: 2rem;
   margin-top: 2rem;
-  cursor: pointer;
-} */
+  margin-bottom: 4rem;
+  height: auto;
+  grid-template-columns: repeat(2,1fr);
+  text-align: center;
+  background-image:linear-gradient(to bottom, #f9f9f9, #f3f3f3);
+}
 
-
-
+.slide1 > img {
+  width: 80%;
+  height: 12rem;
+}
 
 }
